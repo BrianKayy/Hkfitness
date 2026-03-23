@@ -103,7 +103,7 @@ import "./index.css";
           </div>
 
           <button type="submit" className="submit-btn">
-            Start My Fitness Journey
+            SUBMIT
           </button>
 
         </form>

@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa";
 const plans = [
   {
     title: "Essential Start",
-    button: "Join Now",
+    button: "Free Consultation",
     features: [
       "Initial fitness assessment",
       "Basic workout program",
@@ -16,7 +16,7 @@ const plans = [
   },
   {
     title: "Active Growth",
-    button: "Join Now",
+    button: "Free Consultation",
     features: [
       "Full fitness assessment",
       "Custom workout programs",
@@ -28,7 +28,7 @@ const plans = [
   },
   {
     title: "Elite Transformation",
-    button: "Join Now",
+    button: "Free Consulation",
     premium: true,
     features: [
       "Complete fitness & lifestyle assessment",

@@ -1,10 +1,18 @@
 import React from "react";
 import "./App.css";
-import trainer1 from "./images/trainer1.jpeg";
-import trainer2 from "./images/trainer2.jpeg";
-import trainer3 from "./images/trainer3.jpeg";
-import trainer4 from "./images/trainer4.jpeg";
-import trainer5 from "./images/trainer5.mp4";
+import tr1 from "./images/tr1.jpeg";
+import tr2 from "./images/tr2.jpeg";
+import tr3 from "./images/tr3.jpeg";
+import tr4 from "./images/tr4.jpeg";
+import tr5 from "./images/tr5.jpeg";
+import tr6 from "./images/tr6.jpeg";
+import tr7 from "./images/tr7.jpeg";
+import tr8 from "./images/tr8.jpeg";
+import tr9 from "./images/tr9.jpeg";
+import tr10 from "./images/tr10.jpeg";
+import v1 from "./images/v1.mov";
+import v2 from "./images/v2.mov";
+import v3 from "./images/v3.mov";
 
  function Gallery() {
   return (
@@ -23,32 +31,59 @@ import trainer5 from "./images/trainer5.mp4";
         {/* Images */}
 
         <div className="gallery-item">
-          <img src={trainer1} alt="Client workout session"/>
+          <img src={tr1} alt="Client workout session"/>
         </div>
 
         <div className="gallery-item">
-          <img src={trainer2} alt="Personal training session"/>
+          <img src={tr2} alt="Personal training session"/>
         </div>
 
         <div className="gallery-item">
-          <img src={trainer3} alt="Strength training"/>
+          <img src={tr3} alt="Strength training"/>
         </div>
 
         <div className="gallery-item">
-          <img src={trainer4} alt="Gym coaching"/>
+          <img src={tr4} alt="Gym coaching"/>
+        </div>
+          <div className="gallery-item">
+          <img src={tr5} alt="Client workout session"/>
+        </div>
+
+        <div className="gallery-item">
+          <img src={tr6} alt="Personal training session"/>
+        </div>
+
+        <div className="gallery-item">
+          <img src={tr7} alt="Strength training"/>
+        </div>
+
+        <div className="gallery-item">
+          <img src={tr8} alt="Gym coaching"/>
+        </div>
+      
+         <div className="gallery-item">
+          <img src={tr9} alt="Strength training"/>
+        </div>
+        <div className="gallery-item">
+          <img src={tr10} alt="Strength training"/>
         </div>
 
         {/* Videos */}
 
         <div className="gallery-item video">
           <video controls>
-            <source src={trainer5} type="video/mp4" />
+            <source src={v1} type="video/mp4" />
           </video>
         </div>
 
         <div className="gallery-item video">
           <video controls>
-            <source src={trainer5} type="video/mp4" />
+            <source src={v2} type="video/mp4" />
+          </video>
+        </div>
+        <div className="gallery-item video">
+          <video controls>
+            <source src={v3} type="video/mp4" />
           </video>
         </div>
 

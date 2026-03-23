@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import trainer6 from "./images/trainer6.jpeg";
+import trainer6 from "./images/pf1.jpeg";
 
 function About() {
   return (
@@ -15,28 +15,44 @@ function About() {
 
         {/* Bio */}
         <div className="coach-bio">
-          <h2>Hakim Ssembatya</h2>
-          <h3>Certified Personal Coach</h3>
+         <h2>Hakim</h2>
+      <h3>Certified Personal Coach</h3>
 
-          <p>
-            With years of experience transforming lives, Hakim Ssembatya is more than just a personal trainer he is a mentor, motivator, and dedicated partner in your fitness journey. His holistic approach combines science-backed training techniques, personalized nutrition guidance, and unwavering support to ensure every client achieves their best results.
-          </p>
+      <p>
+        With years of experience transforming lives, Hakim is more than just a personal trainer—he is a mentor, motivator, and dedicated partner in your fitness journey. His holistic approach combines science-based training, personalized nutrition guidance, and consistent support to help every client achieve real, lasting results.
+      </p>
 
-          <p>
-            Hakim’s passion for health and fitness is evident in the remarkable transformations of his clients. Whether it’s weight loss, strength building, improving endurance, or creating sustainable healthy habits, he tailors every program with precision and care. Each workout, each session, is thoughtfully designed to challenge, motivate, and empower you.
-          </p>
+      <p>
+        Hakim’s passion for health and fitness is reflected in the remarkable transformations of his clients. Whether your goal is fat loss, muscle building, strength development, or improving endurance, every program is tailored with precision and purpose.
+      </p>
 
-          <p>
-            Beyond his technical expertise, Hakim is known for his approachable and encouraging nature. Clients often remark on his ability to inspire confidence, create a positive and energizing environment, and celebrate every milestone along the journey. His mission is not just about fitness it’s about fostering lifelong well being and helping individuals reach their full potential.
-          </p>
+      <p>
+        Each session is carefully designed to challenge you, build discipline, and unlock your full potential—no shortcuts, just proven methods that work.
+      </p>
 
-          <p>
-            When you work with Hakim, you’re not just signing up for a personal training program you’re joining a community dedicated to transformation. His guidance goes beyond the gym, equipping you with knowledge, motivation, and confidence to sustain your results and embrace a healthier, stronger lifestyle.
-          </p>
+      <p>
+        <strong>What You Can Expect:</strong> Personalized training programs tailored to your goals and fitness level, science-based coaching focused on sustainable progress, nutrition guidance to support performance and recovery, accountability and support every step of the way, and a results-driven approach with measurable progress.
+      </p>
 
-          <p>
-            Join Hakim Ssembatya today and experience a coaching journey that is personal, results driven, and inspiring. Every session is crafted to push your limits, nurture your growth, and celebrate your achievements, making the path to fitness not only effective but also enjoyable.
-          </p>
+      <p>
+        <strong>Why Train with HK:</strong> Beyond technical expertise, Hakim is known for his positive energy and motivating presence. He creates an environment where clients feel confident, supported, and inspired to push beyond their limits.
+      </p>
+
+      <p>
+        His mission goes beyond physical transformation—it’s about building lifelong habits, strong mindsets, and a healthier, more confident version of you.
+      </p>
+
+      <p>
+        <strong>Join HKFitness:</strong> When you join HKFitness, you’re not just signing up for training—you’re becoming part of a community focused on growth, discipline, and transformation.
+      </p>
+
+      <p>
+        Hakim’s coaching extends beyond the gym, equipping you with the tools, knowledge, and confidence to maintain your results and live a stronger, healthier lifestyle.
+      </p>
+
+      <p>
+        <strong>Start Your Transformation Today:</strong> Take the first step towards becoming your best self. Train with purpose. Train with HK.
+      </p>
         </div>
 
       </div>
