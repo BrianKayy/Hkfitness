@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 import { FaCheck } from "react-icons/fa";
 
@@ -44,6 +45,7 @@ const plans = [
 ];
 
  function Pricing() {
+      const navigate = useNavigate();
   return (
     <section className="pricing-section">
 
@@ -65,7 +67,7 @@ const plans = [
               ))}
             </ul>
 
-            <button className="plan-btn"   onClick={() => window.location.href = "./Contact"}>{plan.button}</button>
+            <button className="plan-btn"   onClick={() => navigate("/Contact")}>{plan.button}</button>
           </div>
         ))}
       </div>

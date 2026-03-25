@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./index.css";
 import {
   FaInstagram,
@@ -10,6 +12,7 @@ import {
 } from "react-icons/fa";
 
  function Footer() {
+      const navigate = useNavigate();
   return (
     <footer className="footer">
 
@@ -25,7 +28,7 @@ import {
             Start your fitness journey today with expert personal coaching.
           </p>
 
-          <button className="footer-btn" onClick={() => window.location.href = "./Contact"}>Reach Out</button>
+          <button className="footer-btn" onClick={() => navigate("/Contact")}>Reach Out</button>
         </div>
 
 

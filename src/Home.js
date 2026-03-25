@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import Features from './Features';
 import Pricing from './Pricing';
 import trainer from "./images/trainer.jpeg";
 
 function Home() {
+    const navigate = useNavigate();
   return (
     <div className="main">
 
@@ -24,7 +26,7 @@ function Home() {
             to help you become the best version of yourself.
           </p>
 
-          <button className="hero-btn" onClick={() => window.location.href = "./Contact"}>Get Started</button>
+          <button className="hero-btn" onClick={() => navigate("/Contact")}>Get Started</button>
         </div>
 
         <div className="hero-image">
