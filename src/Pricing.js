@@ -5,41 +5,35 @@ import { FaCheck } from "react-icons/fa";
 
 const plans = [
   {
-    title: "Essential Start",
+    title: "Basic – AED 800/month",
     button: "Free Consultation",
     features: [
-      "Initial fitness assessment",
-      "Basic workout program",
-      " training sessions per week",
-      "Email support",
-      "Progress tracking"
-    ]
-  },
-  {
-    title: "Active Growth",
-    button: "Free Consultation",
-    features: [
-      "Full fitness assessment",
-      "Custom workout programs",
-      " training sessions per week",
+      "Personalized workout plan", 
+      "Weekly progress check-in",
       "Nutrition guidance",
-      "Weekly progress review",
-      "Direct trainer messaging"
+      "WhatsApp support"
     ]
   },
   {
-    title: "Elite Transformation",
+    title: "Standard – AED 1,200/month",
     button: "Free Consulation",
     premium: true,
     features: [
-      "Complete fitness & lifestyle assessment",
-      "Fully customized workout plan",
-      " training sessions per week",
-      "Personalized nutrition plan",
-      "Weekly body composition analysis",
-      "Daily trainer support",
-      "Advanced performance tracking",
-      "Priority coaching access"
+      "2 personal training sessions per week",
+      "Customized workout & nutrition plan",  
+        "Weekly progress tracking",
+        "Ongoing support and motivation"
+    ]
+  },
+  {
+    title: "Premium – AED 1,800/month",
+    button: "Free Consultation",
+    features: [
+      "4 personal training sessions per week",  
+       "Full body transformation coaching", 
+       "Personalized workout & meal guidance", 
+       "Weekly progress assessments", 
+       "Priority daily support"
     ]
   }
 ];

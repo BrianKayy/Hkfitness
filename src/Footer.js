@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import "./index.css";
 import {
   FaInstagram,
@@ -21,7 +20,7 @@ import {
         {/* Brand + Promo */}
 
         <div className="footer-brand">
-          <h2>HK<span>fitness</span></h2>
+          <h2>Hk<span>Fitness</span></h2>
 
           <p>
             Ready to transform your body and elevate your lifestyle?

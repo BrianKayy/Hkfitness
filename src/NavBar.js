@@ -1,6 +1,5 @@
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
-import logo from "./images/logo.jpeg";
 import "./index.css";
 
   
@@ -9,7 +8,7 @@ function NavBar() {
   return (
 
     <div className="nav">
-    <img src={logo} alt="Logo" className="logo" />
+    <h2>Hk<span>Fitness</span></h2>
 
 
     <button 
@@ -22,7 +21,7 @@ function NavBar() {
         <NavLink  to="/"  >Home</NavLink >
        <NavLink to="/Features"   >Features</NavLink > 
        <NavLink to="/Pricing"  >Programs</NavLink >
-     <NavLink  to="/Reviews"   > Reviews </NavLink > 
+    {/* <NavLink  to="/Reviews"   > Reviews </NavLink > */}
        <NavLink to="/Gallery"   >Gallery</NavLink >
       <NavLink to="/Contact"   >Contact</NavLink >
        <NavLink to="/About"  >About</NavLink >

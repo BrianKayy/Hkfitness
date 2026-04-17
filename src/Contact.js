@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 
- function Contact() {
-
+function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,29 +20,60 @@ import "./index.css";
     });
   };
 
-  const handleSubmit = (e) => {
+  // Updated handleSubmit to use Render backend or localhost
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    // Use Render URL in production, localhost in development
+    const backendUrl =
+      process.env.REACT_APP_BACKEND_URL || "https://hkfitnessinrender.onrender.com";
+
+    try {
+      const response = await fetch(`${backendUrl}/send-email`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Your message has been sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          age: "",
+          gender: "",
+          nationality: "",
+          city: "",
+          goal: ""
+        }); // Reset form after success
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Error sending email. Please check console for details.");
+    }
   };
 
   return (
     <section className="client-form-section">
-
       <div className="form-container">
-
         <h2>Start Your Transformation</h2>
         <p className="form-subtitle">
           Tell us about yourself so we can design the perfect training program for you.
         </p>
 
         <form onSubmit={handleSubmit}>
-
           <div className="form-grid">
 
             <input
               type="text"
               name="name"
               placeholder="Full Name"
+              value={formData.name}
               onChange={handleChange}
               required
             />
@@ -52,6 +82,7 @@ import "./index.css";
               type="email"
               name="email"
               placeholder="Email Address"
+              value={formData.email}
               onChange={handleChange}
               required
             />
@@ -60,6 +91,7 @@ import "./index.css";
               type="tel"
               name="phone"
               placeholder="Phone Number"
+              value={formData.phone}
               onChange={handleChange}
               required
             />
@@ -68,20 +100,22 @@ import "./index.css";
               type="number"
               name="age"
               placeholder="Age"
+              value={formData.age}
               onChange={handleChange}
             />
 
-            <select name="gender" onChange={handleChange}>
+            <select name="gender" value={formData.gender} onChange={handleChange}>
               <option value="">Gender</option>
               <option>Male</option>
               <option>Female</option>
-              <option>Prefer not to say</option>
+              
             </select>
 
             <input
               type="text"
               name="nationality"
               placeholder="Nationality"
+              value={formData.nationality}
               onChange={handleChange}
             />
 
@@ -89,10 +123,11 @@ import "./index.css";
               type="text"
               name="city"
               placeholder="City"
+              value={formData.city}
               onChange={handleChange}
             />
 
-            <select name="goal" onChange={handleChange}>
+            <select name="goal" value={formData.goal} onChange={handleChange}>
               <option value="">Fitness Goal</option>
               <option>Weight Loss</option>
               <option>Weight Gain</option>
@@ -105,11 +140,8 @@ import "./index.css";
           <button type="submit" className="submit-btn">
             SUBMIT
           </button>
-
         </form>
-
       </div>
-
     </section>
   );
 }

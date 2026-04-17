@@ -14,9 +14,9 @@ const features = [
     text: "Custom nutrition advice and meal planning to support your fitness goals."
   },
   {
-    title: "Program Design",
+    title: "Weight Gain",
     icon: <FaClipboardList />,
-    text: "Structured training programs tailored specifically for your body and goals."
+    text: "Structured training strategies designed to help you gain weight and stay healthy."
   },
   {
     title: "Custom Workouts",

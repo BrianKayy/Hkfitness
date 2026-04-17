@@ -25,12 +25,14 @@ body {
   color: #FFFF00;
   position: 
 }
-.nav .logo {
-  width: 150px;
-  height: 65px;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-left:70px;
+.nav h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.nav span {
+  color: yellow;
 }
 .nav-links {
   display: flex;
