@@ -35,8 +35,8 @@ import {
 
         <div className="footer-contact">
           <h3>Contact</h3>
-          <p>Email: hkfitness@email.com</p>
-          <p>Phone: +971 00 000 0000</p>
+          <p>Email: movicbanks18@gmail.com</p>
+          <p>Phone: +971 56 234 1357</p>
           <p>Location: Dubai – UAE</p>
         </div>
 

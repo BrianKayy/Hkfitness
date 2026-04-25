@@ -7,6 +7,7 @@ function Contact() {
     email: "",
     phone: "",
     age: "",
+    weight:"",
     gender: "",
     nationality: "",
     city: "",
@@ -44,6 +45,7 @@ function Contact() {
           email: "",
           phone: "",
           age: "",
+          weight:"",
           gender: "",
           nationality: "",
           city: "",
@@ -103,6 +105,13 @@ function Contact() {
               value={formData.age}
               onChange={handleChange}
             />
+            <input
+              type="number"
+              name="weight"
+              placeholder="Weight (kg)"
+              value={formData.weight}
+              onChange={handleChange}
+            />
 
             <select name="gender" value={formData.gender} onChange={handleChange}>
               <option value="">Gender</option>
@@ -122,7 +131,7 @@ function Contact() {
             <input
               type="text"
               name="city"
-              placeholder="City"
+              placeholder="Location"
               value={formData.city}
               onChange={handleChange}
             />
@@ -130,7 +139,7 @@ function Contact() {
             <select name="goal" value={formData.goal} onChange={handleChange}>
               <option value="">Fitness Goal</option>
               <option>Weight Loss</option>
-              <option>Weight Gain</option>
+              <option>Muscle Gain</option>
               <option>Nutrition</option>
               <option>Other</option>
             </select>

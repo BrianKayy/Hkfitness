@@ -5,19 +5,15 @@ import tr2 from "./images/tr2.jpeg";
 import tr3 from "./images/tr3.jpeg";
 import tr4 from "./images/tr4.jpeg";
 import tr5 from "./images/tr5.jpeg";
-import tr6 from "./images/tr6.jpeg";
 import tr7 from "./images/tr7.jpeg";
+import tr6 from "./images/tr6.jpeg";
 import tr8 from "./images/tr8.jpeg";
 import tr9 from "./images/tr9.jpeg";
 import tr11 from "./images/tr11.jpeg";
-import tr12 from "./images/tr12.jpeg";
-import tr13 from "./images/tr13.jpeg";
 import tr14 from "./images/trainer.jpeg";
 import tr10 from "./images/tr10.jpeg";
 import v1 from "./images/v1.mov";
-import v2 from "./images/v2.mov";
 import v3 from "./images/v3.mov";
-import v4 from "./images/v4.mov";
 import v5 from "./images/v5.mov";
 
  function Gallery() {
@@ -37,14 +33,6 @@ import v5 from "./images/v5.mov";
         {/* Images */}
          <div className="gallery-item">
           <img src={tr11} alt="Client workout session"/>
-        </div>
-
-        <div className="gallery-item">
-          <img src={tr12} alt="Personal training session"/>
-        </div>
-
-        <div className="gallery-item">
-          <img src={tr13} alt="Strength training"/>
         </div>
 
         <div className="gallery-item">
@@ -97,21 +85,13 @@ import v5 from "./images/v5.mov";
           </video>
         </div>
 
-        <div className="gallery-item video">
-          <video controls>
-            <source src={v2} type="video/mp4" />
-          </video>
-        </div>
+        
         <div className="gallery-item video">
           <video controls>
             <source src={v3} type="video/mp4" />
           </video>
         </div>
-        <div className="gallery-item video">
-          <video controls>
-            <source src={v4} type="video/mp4" />
-          </video>
-        </div>
+        
         <div className="gallery-item video">
           <video controls>
             <source src={v5} type="video/mp4" />
