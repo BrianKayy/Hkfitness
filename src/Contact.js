@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import "./index.css";
 
 function Contact() {
@@ -7,7 +8,7 @@ function Contact() {
     email: "",
     phone: "",
     age: "",
-    weight:"",
+    weight: "",
     gender: "",
     nationality: "",
     city: "",
@@ -21,36 +22,36 @@ function Contact() {
     });
   };
 
-  // Updated handleSubmit to use Render backend or localhost
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Use Render URL in production, localhost in development
     const backendUrl =
-      process.env.REACT_APP_BACKEND_URL || "https://hkfitnessinrender.onrender.com";
+      process.env.REACT_APP_BACKEND_URL ||
+      "https://hkfitnessinrender.onrender.com";
 
     try {
       const response = await fetch(`${backendUrl}/send-email`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData)
       });
 
       if (response.ok) {
         alert("Your message has been sent successfully!");
+
         setFormData({
           name: "",
           email: "",
           phone: "",
           age: "",
-          weight:"",
+          weight: "",
           gender: "",
           nationality: "",
           city: "",
           goal: ""
-        }); // Reset form after success
+        });
       } else {
         alert("Something went wrong. Please try again later.");
       }
@@ -61,97 +62,122 @@ function Contact() {
   };
 
   return (
-    <section className="client-form-section">
-      <div className="form-container">
-        <h2>Start Your Transformation</h2>
-        <p className="form-subtitle">
-          Tell us about yourself so we can design the perfect training program for you.
-        </p>
+    <>
+      <Helmet>
+        <title>Contact Personal Trainer Dubai | HK Fitness</title>
 
-        <form onSubmit={handleSubmit}>
-          <div className="form-grid">
+        <meta
+          name="description"
+          content="Contact HK Fitness in Dubai for personal training, weight loss coaching, strength programs and custom fitness plans."
+        />
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/contact"
+        />
+      </Helmet>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
+      <section className="client-form-section">
+        <div className="form-container">
+          <h2>Start Your Transformation</h2>
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
+          <p className="form-subtitle">
+            Tell us about yourself so we can design the perfect training program for you.
+          </p>
 
-            <input
-              type="number"
-              name="age"
-              placeholder="Age"
-              value={formData.age}
-              onChange={handleChange}
-            />
-            <input
-              type="number"
-              name="weight"
-              placeholder="Weight (kg)"
-              value={formData.weight}
-              onChange={handleChange}
-            />
+          <form onSubmit={handleSubmit}>
+            <div className="form-grid">
 
-            <select name="gender" value={formData.gender} onChange={handleChange}>
-              <option value="">Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              
-            </select>
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
 
-            <input
-              type="text"
-              name="nationality"
-              placeholder="Nationality"
-              value={formData.nationality}
-              onChange={handleChange}
-            />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
 
-            <input
-              type="text"
-              name="city"
-              placeholder="Location"
-              value={formData.city}
-              onChange={handleChange}
-            />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
 
-            <select name="goal" value={formData.goal} onChange={handleChange}>
-              <option value="">Fitness Goal</option>
-              <option>Weight Loss</option>
-              <option>Muscle Gain</option>
-              <option>Nutrition</option>
-              <option>Other</option>
-            </select>
+              <input
+                type="number"
+                name="age"
+                placeholder="Age"
+                value={formData.age}
+                onChange={handleChange}
+              />
 
-          </div>
+              <input
+                type="number"
+                name="weight"
+                placeholder="Weight (kg)"
+                value={formData.weight}
+                onChange={handleChange}
+              />
 
-          <button type="submit" className="submit-btn">
-            SUBMIT
-          </button>
-        </form>
-      </div>
-    </section>
+              <select
+                name="gender"
+                value={formData.gender}
+                onChange={handleChange}
+              >
+                <option value="">Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+
+              <input
+                type="text"
+                name="nationality"
+                placeholder="Nationality"
+                value={formData.nationality}
+                onChange={handleChange}
+              />
+
+              <input
+                type="text"
+                name="city"
+                placeholder="Location"
+                value={formData.city}
+                onChange={handleChange}
+              />
+
+              <select
+                name="goal"
+                value={formData.goal}
+                onChange={handleChange}
+              >
+                <option value="">Fitness Goal</option>
+                <option>Weight Loss</option>
+                <option>Muscle Gain</option>
+                <option>Nutrition</option>
+                <option>Other</option>
+              </select>
+
+            </div>
+
+            <button type="submit" className="submit-btn">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+      </section>
+    </>
   );
 }
 
