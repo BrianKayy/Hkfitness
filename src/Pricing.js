@@ -55,7 +55,7 @@ function Pricing() {
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/pricing"
+          href="https://hkfitness.ae/Pricing"
         />
       </Helmet>
 

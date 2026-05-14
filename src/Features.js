@@ -57,7 +57,7 @@ function Features() {
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/features"
+          href="https://hkfitness.ae/Features"
         />
       </Helmet>
 

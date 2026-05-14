@@ -10,7 +10,8 @@ function About() {
 
         {/* Portrait */}
         <div className="coach-portrait">
-          <img src={trainer6} alt="Hakim Ssembatya Portrait"/>
+          <img src={trainer6} alt="Hakim Ssembatya Portrait" loading="lazy"
+/>
         </div>
 
         {/* Bio */}

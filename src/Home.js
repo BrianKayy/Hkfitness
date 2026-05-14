@@ -20,7 +20,7 @@ function Home() {
           content="Transform your body with HK Fitness. Personal training in Dubai for fat loss, muscle gain, strength and complete body transformation."
         />
 
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <link rel="canonical" href="https://hkfitness.ae/" />
       </Helmet>
 
       <div className="welcome-section">
@@ -52,6 +52,8 @@ function Home() {
               <img
                 src={trainer}
                 alt="Personal trainer helping client workout"
+                loading="lazy"
+
               />
             </div>
 

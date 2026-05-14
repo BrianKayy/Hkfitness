@@ -73,7 +73,7 @@ function Contact() {
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/contact"
+          href="https://hkfitness.ae/Contact"
         />
       </Helmet>
 

@@ -32,49 +32,52 @@ import v5 from "./images/v5.mov";
 
         {/* Images */}
          <div className="gallery-item">
-          <img src={tr11} alt="Client workout session"/>
+          <img src={tr11} alt="Client workout session" loading="lazy"
+/>
+          
         </div>
 
         <div className="gallery-item">
-          <img src={tr14} alt="Gym coaching"/>
+          <img src={tr14} alt="Gym coaching" loading="lazy"/>
+         
         </div>
 
         <div className="gallery-item">
-          <img src={tr1} alt="Client workout session"/>
+          <img src={tr1} alt="Client workout session" loading="lazy"/>
         </div>
 
         <div className="gallery-item">
-          <img src={tr2} alt="Personal training session"/>
+          <img src={tr2} alt="Personal training session" loading="lazy"/>
         </div>
 
         <div className="gallery-item">
-          <img src={tr3} alt="Strength training"/>
+          <img src={tr3} alt="Strength training" loading="lazy"/>
         </div>
 
         <div className="gallery-item">
-          <img src={tr4} alt="Gym coaching"/>
+          <img src={tr4} alt="Gym coaching" loading="lazy"/>
         </div>
           <div className="gallery-item">
-          <img src={tr5} alt="Client workout session"/>
+          <img src={tr5} alt="Client workout session" loading="lazy"/>
         </div>
 
         <div className="gallery-item">
-          <img src={tr6} alt="Personal training session"/>
+          <img src={tr6} alt="Personal training session" loading="lazy"/>
         </div>
 
         <div className="gallery-item">
-          <img src={tr7} alt="Strength training"/>
+          <img src={tr7} alt="Strength training" loading="lazy"/>
         </div>
 
         <div className="gallery-item">
-          <img src={tr8} alt="Gym coaching"/>
+          <img src={tr8} alt="Gym coaching" loading="lazy"/>
         </div>
       
          <div className="gallery-item">
-          <img src={tr9} alt="Strength training"/>
+          <img src={tr9} alt="Strength training" loading="lazy"/>
         </div>
         <div className="gallery-item">
-          <img src={tr10} alt="Strength training"/>
+          <img src={tr10} alt="Strength training" loading="lazy"/>
         </div>
 
         {/* Videos */}
