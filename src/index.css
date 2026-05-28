@@ -444,12 +444,12 @@ body {
   font-size: 22px;
 }
 
-.social-icons svg {
+.social-icons svg{
   cursor: pointer;
   transition: 0.3s;
 }
 
-.social-icons svg:hover {
+.social-icons svg :hover {
   color: yellow;
   transform: scale(1.2);
 }

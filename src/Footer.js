@@ -3,10 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./index.css";
 import {
   FaInstagram,
-  FaFacebook,
   FaLinkedin,
   FaWhatsapp,
-  FaTwitter,
   FaYoutube
 } from "react-icons/fa";
 
@@ -47,13 +45,19 @@ import {
           <h3>Follow Us</h3>
 
           <div className="social-icons">
+          <a href="https://www.instagram.com/hkfitness_1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
-            <FaFacebook />
-            <FaLinkedin />
+          </a>
+
+          <a href="https://www.linkedin.com/in/hakim-ssembatya/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin /> 
+          </a>
+          <a href="https://wa.me/0562341357" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp />
-            <FaTwitter />
+          </a>
+          <a href="https://www.youtube.com/c/HKFitness" target="_blank" rel="noopener noreferrer">
             <FaYoutube />
-          </div>
+          </a>
         </div>
 
       </div>
@@ -64,7 +68,7 @@ import {
       <div className="footer-bottom">
         <p>Copyright © 2026 HKfitness</p>
       </div>
-
+      </div>
     </footer>
   );
 }
